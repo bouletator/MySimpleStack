@@ -28,8 +28,7 @@ public class MySimpleStack {
     }
 
     public Item pop() throws EmptyStackException{
-        if(stack.isEmpty()) throw new EmptyStackException();
-        Item i = stack.get(stack.size() - 1);
+        Item i = peek();
         stack.remove(stack.size() - 1);
         return i;
     }
