@@ -32,4 +32,8 @@ public class MySimpleStack {
         stack.remove(stack.size() - 1);
         return i;
     }
+
+    public String toString(){
+        return "Size : "+stack.size();
+    }
 }
